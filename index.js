@@ -29,7 +29,10 @@ app.post('/register', async function(req, res) {
 app.post('/calculate', function (req, res) {
     let num1 = req.body.num1;
     let num2 = req.body.num2;
-    let op = req.body;
+    let op = req.body.op;
+
+
+    console.log('juhygygttfytyftyfytf',req.body);
     let result;
 
     if(op == 'add') {
