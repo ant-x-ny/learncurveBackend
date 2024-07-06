@@ -29,16 +29,16 @@ app.post('/register', async function(req, res) {
 app.post('/calculate', function (req, res) {
     let num1 = req.body.num1;
     let num2 = req.body.num2;
-    let opporator = req.body.opporator;
+    let op = req.body.;
     let result;
 
-    if(opporator == 'add') {
+    if(op == 'add') {
      result = num1 + num2;
-    } else if(opporator == 'sub') {
+    } else if(op == 'sub') {
         result = num1 - num2;
-    }else if(opporator == 'mul') {
+    }else if(op == 'mul') {
         result = num1 * num2;
-    } else if(opporator == 'div') {
+    } else if(op == 'div') {
         result = num1 / num2;
     }
     res.json(result);
