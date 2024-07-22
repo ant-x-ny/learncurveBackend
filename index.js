@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json());
 
 async function mongoConnect() {
-    let client = new MongoClient('mongodb+srv://kalathilgeorgeantony:9RTLTvh1VZ11ORRR@bigdata.68y9vlb.mongodb.net/?retryWrites=true&w=majority&appName=BigData');
+    let client = new MongoClient('CONNECTINGLINKHERE');
     await client.connect();
     db = client.db('sample_mflix');
     ;
